@@ -8,4 +8,4 @@ class OrderLineAdminInline(admin.TabularInline):
 class OrderAdmin(admin.ModelAdmin):
     inlines = (OrderLineAdminInline, )
     
-admin.site.register    
+admin.site.register(Order, OrderAdmin)    
